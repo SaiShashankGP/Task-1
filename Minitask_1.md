@@ -1,4 +1,4 @@
-Project 1 - Automatic Water Tap:
+# Project 1 - Automatic Water Tap
   Description:
     This project enables us to operate tap only when required and there won't be an human errors.
     For example, forgetting to shut the tap off and not turning it off properly etc...
