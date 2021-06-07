@@ -78,7 +78,7 @@ This IR Thermometer reads the temperature of a person or object in its range wit
 #### Components required:
 
 1. Arduino nano
-2. 18560 batteries
+2. 18650 batteries
 3. GY 906 Temeperature sensor
 4. FC 51 IR proximity sensor
 5. MT 3608 boost converter
@@ -103,7 +103,7 @@ If ithe objects temperature isn't normal, the the buzzer buzzes for two seconds 
 
 After two seconds, all the indicators return to their original state and be ther until the next object is detected by FC 51.
 
-The power to all the opertaion happening here comes from 18650 batteries. They are mage rechargable by adding TP 4056 module.
+The power to all the operation happening here comes from 18650 batteries. They are mage rechargable by adding TP 4056 module.
 
 #### Prototyping and Testing:
 
