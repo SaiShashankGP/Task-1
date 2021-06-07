@@ -121,5 +121,41 @@ This is automatic and detects temperature of object in its range automatically.
 
 We can include a switch between power and circuit and make it manual and use it at public place entrances as we see now.
 
+# Project 3 - Password based Locking system
+#### Description:
 
-    
+This is a simple passwrod based locking system where one enters a password and if it matches with the predefined password, they can access the door.
+
+#### Components required:
+
+1. 8051 Microcontroller
+2. L293D motor driver IC
+3. 16x2 LCD display
+4. DC motor
+5. 4x4 keyboard
+
+#### Ideation:
+
+Microcontroller is chosen here because we need to store a predefined password, take and process inputs and give outputs. 
+
+First, we give the micricontroller a password. It stores it in its ROM.
+
+We take input from keyboard which is the password given by user. The user sees a "\*" in place of his entered chracter on LCD.
+
+The microcontroller checks whether the given input is equal to the predefined password.
+
+If it matches, microcontroller makes LCD display "correct pasword" and it sends a signal to L293D IC such that the IC turns the motor to open the door.
+
+If it doesn't match, the microcontroller sends signal to LCD such that it displays "wrong password" to user.
+
+#### Prototyping and Testing:
+
+<img width="600" alt="Screenshot 2021-06-07 at 3 39 54 PM" src="https://user-images.githubusercontent.com/85270751/120999427-b891e600-c7a6-11eb-9011-8bd8d5537c6e.png">
+
+#### Comments:
+
+User gets infinite tries and once the password is set, user cannot change it via keyboard and instaed should change the hardcoded password.
+
+This can be changed by attaching an external storage for just the password to the microcontroller. 
+
+Then hardcoding a certain input that can be given via keyboard which can act as an indication to microcontroller to change the passwrd in the external storage.
