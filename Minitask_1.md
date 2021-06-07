@@ -154,8 +154,8 @@ If it doesn't match, the microcontroller sends signal to LCD such that it displa
 
 #### Comments:
 
-User gets infinite tries and once the password is set, user cannot change it via keyboard and instaed should change the hardcoded password.
+User gets infinite tries and once the password is set, user cannot change it via keyboard and instead should change the hardcoded password.
 
-This can be changed by attaching an external storage for just the password to the microcontroller. 
+This can be improved by attaching an external storage for just the password to the microcontroller. 
 
-Then hardcoding a certain input that can be given via keyboard which can act as an indication to microcontroller to change the passwrd in the external storage.
+Then hardcoding a certain input that can be given via keyboard which can act as an indication to microcontroller to change the password in the external storage.
