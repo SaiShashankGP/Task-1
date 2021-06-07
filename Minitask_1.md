@@ -199,3 +199,15 @@ https://user-images.githubusercontent.com/85270751/121068424-e4828b00-c7e9-11eb-
 
 Some modification in circuit like the 1\*6 socket to USB I\/O port can make it useful for moblies etc...
 
+# Project 5 - Line following bot
+#### Description:
+
+This bot follows the line infront of it and stops when the line stops.
+
+This product uses Raspberry pi and python to achieve the task.
+
+#### Components required:
+
+1. Raspberry pi 
+2. DC motors
+3. 
