@@ -152,6 +152,10 @@ If it doesn't match, the microcontroller sends signal to LCD such that it displa
 
 <img width="600" alt="Screenshot 2021-06-07 at 3 39 54 PM" src="https://user-images.githubusercontent.com/85270751/120999427-b891e600-c7a6-11eb-9011-8bd8d5537c6e.png">
 
+#### Reference project:
+
+https://www.electronicshub.org/password-based-door-lock-system-using-8051-microcontroller/
+
 #### Comments:
 
 User gets infinite tries and once the password is set, user cannot change it via keyboard and instead should change the hardcoded password.
@@ -159,3 +163,33 @@ User gets infinite tries and once the password is set, user cannot change it via
 This can be improved by attaching an external storage for just the password to the microcontroller. 
 
 Then hardcoding a certain input that can be given via keyboard which can act as an indication to microcontroller to change the password in the external storage.
+# Project 4 - Portable Power Supply
+#### Description:
+
+This product can be used as power supply in other projects. 
+
+This is like a DIY Power supply
+
+#### Components required:
+
+1. J5019 charging module with step up converter
+2. 18650 battery
+3. LCD display voltmeter
+4. 1\*6 pin header socket
+5. Slide switch 
+#### Ideation:
+
+The image below shows the circuitry involved.
+![project 4](https://user-images.githubusercontent.com/85270751/121040880-e2abce00-c7cf-11eb-9aa0-fc2fc04586c8.png)
+
+When SW2A is in 1-2 position and SW1A is in 2-3 position, the voltmeter measures the voltage power supply is giving as output.
+
+When SW2A is in 2-3 position and SW1A is in 2-3 position, the voltmeter measures the voltage across battery.
+
+When SW1A is in 1-2 position, the voltmeter is in off state and doesn't display anything.
+
+We can even adjust the voltage output because J5019 has such property.
+
+#### Prototyping and testing:
+
+
