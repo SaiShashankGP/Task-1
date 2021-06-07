@@ -180,7 +180,7 @@ This is like a DIY Power supply
 #### Ideation:
 
 The image below shows the circuitry involved.
-![project 4](https://user-images.githubusercontent.com/85270751/121040880-e2abce00-c7cf-11eb-9aa0-fc2fc04586c8.png)
+<img width = "600" alt = "project4" src = "https://user-images.githubusercontent.com/85270751/121040880-e2abce00-c7cf-11eb-9aa0-fc2fc04586c8.png">
 
 When SW2A is in 1-2 position and SW1A is in 2-3 position, the voltmeter measures the voltage power supply is giving as output.
 
