@@ -191,6 +191,11 @@ When SW1A is in 1-2 position, the voltmeter is in off state and doesn't display 
 
 We can even adjust the voltage output because J5019 has such property.
 
-#### Prototyping and testing:
+#### Prtotyping and Testing:
 
+https://user-images.githubusercontent.com/85270751/121068424-e4828b00-c7e9-11eb-8e8c-01774fc607c6.mp4
+
+#### Comments:
+
+Some modification in circuit like the 1\*6 socket to USB I\/O port can make it useful for moblies etc...
 
