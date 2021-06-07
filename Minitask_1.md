@@ -179,7 +179,7 @@ This is like a DIY Power supply
 5. Slide switch 
 #### Ideation:
 
-![project 4](https://user-images.githubusercontent.com/85270751/121040880-e2abce00-c7cf-11eb-9aa0-fc2fc04586c8.png = 600x600)
+<img src = "https://user-images.githubusercontent.com/85270751/121040880-e2abce00-c7cf-11eb-9aa0-fc2fc04586c8.png" width = "600" height = "600">
 
 The image shows the circuitry involved.
 
