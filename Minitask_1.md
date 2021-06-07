@@ -109,7 +109,7 @@ The power to all the opertaion happening here comes from 18650 batteries. They a
 
 All this circuitry goes into a case which is 3D printed. Only the IR proximity sensor, LEDs, OLED display and USB input for recharge is visible outside.
 
-![project 2](https://user-images.githubusercontent.com/85270751/120969759-2d095c80-c788-11eb-9a38-8403a7f062e3.jpg)
+<img width = "600" alt = "project 2" src = "https://user-images.githubusercontent.com/85270751/120969759-2d095c80-c788-11eb-9a38-8403a7f062e3.jpg">
 
 #### Reference Project:
 
