@@ -195,6 +195,10 @@ We can even adjust the voltage output because J5019 has such property.
 
 https://user-images.githubusercontent.com/85270751/121068424-e4828b00-c7e9-11eb-8e8c-01774fc607c6.mp4
 
+#### Reference Project:
+
+https://www.instructables.com/Portable-Power-Supply-18650-Battery/
+
 #### Comments:
 
 Some modification in circuit like the 1\*6 socket to USB I\/O port can make it useful for moblies etc...
@@ -210,4 +214,40 @@ This product uses Raspberry pi and python to achieve the task.
 
 1. Raspberry pi 
 2. DC motors
-3. 
+3. Motor controller board
+4. Battery holder and Batteries
+5. Wheels
+6. Line sensors
+
+#### Ideation:
+
+Connect the motors to Motor contrller board. Connect motor controller board to raspberry pi and battery holder.
+
+Conenect the line sensors to raspberry pi. 
+
+The battery provides the power to run motors. Now, program raspberry pi to take input from line sensors and make motors run according to input.
+
+Connect the wheels to motors and put the whole circuitry inside a box and wheels outside the box.
+
+For example, take two line sensors and mark one as left and other as right. 
+
+If left sensor detects line and right doesn't, tilt right.
+
+If right sensor detects line and left doesn't, tilt left.
+
+If both detect line then move forward. 
+
+If both doesn't detect line the stop.
+
+#### Reference project:
+
+https://projects.raspberrypi.org/en/projects/rpi-python-line-following
+
+#### Comments:
+
+This is a simple version of sensory robot. We can use similar logic and make it ultrasonic frequency following robot.
+
+Like, producing a certain frequency and having a sensor that can detect the origin of frequency and move in that direction.
+
+That would also have some limitations and we can improve further to make it autonomous.
+
