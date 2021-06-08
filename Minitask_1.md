@@ -251,3 +251,13 @@ Like, producing a certain frequency and having a sensor that can detect the orig
 
 That would also have some limitations and we can improve further to make it autonomous.
 
+# Project 6 - Desktop GUI MP3 Player app
+#### Description:
+This app is user intearcting mp3 player in which we can 
+1. play mp3 files on the device
+2. create playlists
+3. shuffle playlists
+4. change playback speed
+
+#### Ideation:
+
