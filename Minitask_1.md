@@ -270,7 +270,7 @@ This app is user intearcting mp3 player in which we can
 
 We create a GUI app using Tkinter. 
 
-'''
+```
 from tkinter import *
 
 root = Tk()
@@ -279,15 +279,17 @@ root.iconbitmap("/Desktop/Python_Project/mpp3player.py")
 root.geometry(500x500)
 
 root.mainloop()
-'''
+```
 We the import pygame and start by creating place for playlist.
 
-'''
+```
 import pygame
 
 pygame.mixer.init()
 
 playlist_area = Listbox(root, bg = "black", fg = "green', width = 60, selectbackground = "grey", selectforeground = "white")
 playlist_area.pack(pady = 20)
-'''
+```
+
+
 
