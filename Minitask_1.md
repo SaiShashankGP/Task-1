@@ -257,7 +257,37 @@ This app is user intearcting mp3 player in which we can
 1. play mp3 files on the device
 2. create playlists
 3. shuffle playlists
-4. change playback speed
+4. Increase and decrease volume
+
+#### Python modules used:
+
+1. Tkinter
+2. Pygame
+3. Mutagen.mp3
+4. Time
 
 #### Ideation:
+
+We create a GUI app using Tkinter. 
+
+'''
+from tkinter import *
+
+root = Tk()
+root.title("MP3 Player")
+root.iconbitmap("/Desktop/Python_Project/mpp3player.py")
+root.geometry(500x500)
+
+root.mainloop()
+'''
+We the import pygame and start by creating place for playlist.
+
+'''
+import pygame
+
+pygame.mixer.init()
+
+playlist_area = Listbox(root, bg = "black", fg = "green', width = 60, selectbackground = "grey", selectforeground = "white")
+playlist_area.pack(pady = 20)
+'''
 
