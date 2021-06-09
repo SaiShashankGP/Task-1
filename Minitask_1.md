@@ -268,7 +268,7 @@ This app is user intearcting mp3 player in which we can
 
 #### Ideation:
 
-Here, i will be showing a basic play, pause and stop mp3player. It is just to show how it can be done.
+Here, I will be showing a basic play, pause and stop mp3player. It is just to show how it can be done.
 
 We create a GUI app using Tkinter. 
 
