@@ -360,5 +360,19 @@ It was very long to code all those and understand everything.
 
 But I think when given a sufficient amount of time and as a group, it can be done with much more improvements than the above one.
 
+# Project 7 - Seismograph
+#### Description:
+Home made seismograph can be used to know when an earthquake happens near our home and we can take measures accordingly.
+This uses some simple components like Raspberry pi, Raspberry Shake OS etc... 
+
+#### Components required:
+
+1. Raspberry pi
+2. Racotech RGI-20DX geophone
+3. Shake RS1D board
+4. micro SD card
+
+#### Ideation:
+
 
 
