@@ -268,6 +268,8 @@ This app is user intearcting mp3 player in which we can
 
 #### Ideation:
 
+Here, i will be showing a basic play, pause and stop mp3player. It is just to show how it can be done.
+
 We create a GUI app using Tkinter. 
 
 ```
@@ -290,6 +292,73 @@ pygame.mixer.init()
 playlist_area = Listbox(root, bg = "black", fg = "green', width = 60, selectbackground = "grey", selectforeground = "white")
 playlist_area.pack(pady = 20)
 ```
+
+We then give an option to add .mp3 file
+
+```
+from tkinter import filedialog
+
+def add_song():
+    song = fledialog.askopenfilename(initialdir = '/Music', title = 'Choose a song', filetypes = (('mp3 files', '*.mp3'), )
+    song = song.replace("/Music/", "")
+    song = song.replace(".mp3", "")
+    playlist_area.insert(song, END)
+  
+my_menu = Menu(root)
+root.config(menu = my_menu)
+
+add_song_menu = Menu(my_menu)
+my_menu.add_cascade(label = "Add Songs", menu = add_song_menu)
+add_song_menu.add_command(label = "Add one song to playlist", command = add_song)
+```
+Now, we can define play, pause and stop buttons.
+
+```
+def play():
+    song = song_box.get(ACTIVE)
+    song = f'/Users/saishashankgp/Desktop/{song}.mp3'
+
+    pygame.mixer.music.load(song)
+    pygame.mixer.music.play(loops = 0)
+
+def stop():
+    pygame.mixer.music.stop()
+    song_box.selection_clear(ACTIVE)
+  
+def pause():
+    pygame.mixer.music.pause(ACTIVE)
+    pygame.mixer.music.unpause(ACTIVE)
+
+play_btn = PhotoImage(file = '/Desktop/play.png')
+pause_btn = PhotoImage(file = '/Desktop/pause.png')
+stop_btn = PhotoImage(file = '/Desktop/stop.png')
+
+controls_frame = Frame(root)
+controls_frame.pack()
+
+play_button = Button(controls_frame, image = play_btn, borderwidth = 0, command = play)
+pause_button = Button(controls_frame, image = pause_btn, borderwidth = 0, command = pause)
+stop_button = Button(controls_frame, image = stop_btn, borderwidth = 0, command = stop)
+
+play_button.grid(row = 0, column = 0, padx = 10)
+pause_button.grid(row = 0, column = 1, padx = 10)
+stop_button.grid(row = 0, column = 2, padx = 10)
+```
+These codeblocks when put together give a simple play-pause-stop mp3 player.
+
+#### Testing:
+
+#### Reference project:
+
+https://www.youtube.com/watch?v=CXMcNbo8PLE&list=RDCMUCFB0dxMudkws1q8w5NJEAmw&start_radio=1&rv=CXMcNbo8PLE&t=0
+
+#### Comments:
+
+This is a pretty hard one to do as said in the reference project. 
+
+It was very long to code all those and understand everything.
+
+But I think when given a sufficient amount of time and as a group, it can be done with much more improvements than the above one.
 
 
 
