@@ -388,7 +388,7 @@ We then configure the seismograph by connecting it to Raspberry shake database.
 
 We then have a working seismograph in our home.
 
-<img width = 600 height = 600 src = "https://user-images.githubusercontent.com/85270751/121531594-327ed500-ca1c-11eb-8e1e-ecc80fd2c73e.jpg">
+<img width = 800 height = 600 src = "https://user-images.githubusercontent.com/85270751/121531594-327ed500-ca1c-11eb-8e1e-ecc80fd2c73e.jpg">
 
 #### Comments:
 
