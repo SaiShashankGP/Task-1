@@ -372,7 +372,34 @@ This uses some simple components like Raspberry pi, Raspberry Shake OS etc...
 3. Shake RS1D board
 4. micro SD card
 
-#### Ideation:
+#### Prototyping and Testing:
+
+First, we need to connect the geophone's terminals to positive and negative ( for this, we have twist the wires and then connect)
+
+Place the raspberry pi in the raspberry shake enclosure and insert the micro SD card given by the raspberry shake into raspberry pi.
+
+Enclose the geophone in a plastic casing in the raspberry shake board.
+
+We have to level it by adjusting the levelling screws and there is a given spirit level in the board.
+
+We then conncet the whole apparatus to the router via ethernet. Makers suggest we keep it on ground.
+
+We then configure the seismograph by connecting it to Raspberry shake database.
+
+We then have a working seismograph in our home.
+
+<img width = 600 height = 600 src = "https://user-images.githubusercontent.com/85270751/121531594-327ed500-ca1c-11eb-8e1e-ecc80fd2c73e.jpg">
+
+#### Comments:
+
+This is a pretty simple yet very useful project.
+
+We have to get the underlying mechanism to fully undrstand how this works.
+
+
+
+
+
 
 
 
