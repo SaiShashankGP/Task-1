@@ -396,6 +396,26 @@ This is a pretty simple yet very useful project.
 
 We have to get the underlying mechanism to fully understand how this works.
 
+# Project 8 - Simple Lie Detector
+#### Description:
+
+This simple circuit is based on an experimental conclusion that, "Human skin varies onductance depending on our state".
+
+This property can be usedd to differentiate truth from lie.
+
+Ofcourse this simple project is not the most accurate but it works wth dependable accuracy.
+
+#### Components required:
+
+1. Arduino nano
+2. LEDs
+3. Breadboard
+4. resistors
+
+#### Ideation:
+
+
+
 
 
 
