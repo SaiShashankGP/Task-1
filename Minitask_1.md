@@ -394,7 +394,7 @@ We then have a working seismograph in our home.
 
 This is a pretty simple yet very useful project.
 
-We have to get the underlying mechanism to fully undrstand how this works.
+We have to get the underlying mechanism to fully understand how this works.
 
 
 
