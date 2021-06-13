@@ -119,6 +119,102 @@ Check the voltage input for arduino, If it is more than not in recommneded range
 
 Chcek the voltage inputs for the other componenets similarly. 
 
+# Debugging Project 6 - Desktop GUI MP3 Player
+
+There are many factors to take into consideration before finishing the prototype. We have check whether the prototype is working to its cap or not. 
+
+This is where Debugging comes into play. We have debug the project and check whether the desired job is being done at every stage.
+
+While writing the code, we should be very careful withh syntax. Most of the code bugs are syntax errors only. 
+
+From minitask_2.md, we take the requirements of the app. They are, 
+
+1. Play .mp3 files
+2. Create playlist
+3. Navigate through playlist
+4. Pause and Stop on command
+5. Scroll through the playing .mp3 file
+6. Show us the duration of .mp3 file and our current position
+
+## Check whether the app GUI is working or not:
+
+The app GUI doesn't work when we get bugs at the start where we initialise the app using Tkinter. 
+
+If we get bugs there, we get error and we won't be able to see the GUI. 
+
+Make sure we get the Tkinter synatx correct.
+
+## Check whether the app is able to play .mp3 files:
+
+This is our primary requirement besides others.
+
+We have to check for bugs at pygame mixer initialisation and at play function. 
+
+If they are correct we can play the .mp3 file in the playlist. 
+
+Make sure we get the pygame syntax correct.
+
+## Check whether the app is able to create playslist:
+
+This is our next important requirement. 
+
+We have to check for bugs at creating master frame, playlist definition, add songs and delete songs menu definition and command definition. 
+
+If we get bugs there, we might get error, it runs and does things that we don't want.
+
+They use pygame and Tkinter modules in main. Make sure we get the syntax correct an we are doing what we want to do. 
+
+## Check whether we can navigate through playlist:
+
+Navigation through playlist can be done in two ways:
+
+1. Directly accessing the required .mp3 file by clicking it
+2. Using next song and previuos song buttons
+
+1st method always works because we have used the "ACTIVE" command to describe the current song and clicking the song activates it. 
+
+2nd method is where we find more bugs compared to first.
+
+Check for bugs at next song and previous song function definitions. 
+
+They use mutagen and pygame modules in main. Make sure we get the synatx correct everywhere and we are doing what we want to do. 
+
+## Chek whether we can pause and stop:
+
+If we cannot pause and stop or we get error while trying to pause or stop means tha there are bugs in pause and stop function definitions.
+
+Check for bugs at pause and stop function definitions. 
+
+They use pygame and mutagen modules in main. Make sure we get the synatx correct everywhere and we are doing what we want to do.
+
+## Check whether we can scroll through the .mp3 file:
+
+Here, we can move through the .mp3 file only by scrolling throgh the position slider. 
+
+If we can't move through it or the file isn't scrolling even if we move the slider means that there are bugs in the slide command.
+
+check for bugs at slide function.
+
+This uses pygame module in main. Make sure we get the syntax correct. 
+
+## Check whether the duration and position of .mp3 file playing are shown:
+
+If we cannot see the position of .mp3 file playing and total duration/length of the .mp3 file, There are bugs in playtime function.
+
+This is one of the complicated functions in the code where we use time module and pygame module. 
+
+It is so because the concept involved is less and syntax is more.
+
+Check for syntax mistakes there. Make sure we get the synatx correct everywhere and we are doing what we want to do.
+
+
+
+
+
+
+
+
+
 
 
 
