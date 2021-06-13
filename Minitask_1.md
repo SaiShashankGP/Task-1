@@ -103,7 +103,7 @@ If ithe objects temperature isn't normal, the the buzzer buzzes for two seconds 
 
 After two seconds, all the indicators return to their original state and be ther until the next object is detected by FC 51.
 
-The power to all the operation happening here comes from 18650 batteries. They are mage rechargable by adding TP 4056 module.
+The power to all the operation happening here comes from 18650 batteries. They are made rechargable by adding TP 4056 module.
 
 #### Prototyping and Testing:
 
