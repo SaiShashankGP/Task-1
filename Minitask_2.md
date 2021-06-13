@@ -54,5 +54,9 @@ We can also add switch between batteries and Arduino so that we can get the temp
 
 This also saves the battery power.
 
+The code for arduino is given below in .txt format.
+
+[project2.txt](https://github.com/SaiShashankGP/Task-1/files/6643663/project2.txt)
+
 
 
