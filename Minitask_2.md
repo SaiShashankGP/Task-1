@@ -74,7 +74,6 @@ We want our MP3 player to
 4. Pause and Stop on command
 5. Scroll through the playing .mp3 file
 6. Show us the duration of .mp3 file and our current position
-7. Control sound within the app
 
 Why are we using Tkinter? Because it is one of the most common and simple modules which deal with GUI in python.
 
