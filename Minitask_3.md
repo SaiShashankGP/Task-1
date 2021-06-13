@@ -136,7 +136,7 @@ From minitask_2.md, we take the requirements of the app. They are,
 5. Scroll through the playing .mp3 file
 6. Show us the duration of .mp3 file and our current position
 
-## Check whether the app GUI is working or not:
+#### Check whether the app GUI is working or not:
 
 The app GUI doesn't work when we get bugs at the start where we initialise the app using Tkinter. 
 
@@ -144,7 +144,7 @@ If we get bugs there, we get error and we won't be able to see the GUI.
 
 Make sure we get the Tkinter synatx correct.
 
-## Check whether the app is able to play .mp3 files:
+#### Check whether the app is able to play .mp3 files:
 
 This is our primary requirement besides others.
 
@@ -154,7 +154,7 @@ If they are correct we can play the .mp3 file in the playlist.
 
 Make sure we get the pygame syntax correct.
 
-## Check whether the app is able to create playslist:
+#### Check whether the app is able to create playslist:
 
 This is our next important requirement. 
 
@@ -164,7 +164,7 @@ If we get bugs there, we might get error, it runs and does things that we don't 
 
 They use pygame and Tkinter modules in main. Make sure we get the syntax correct an we are doing what we want to do. 
 
-## Check whether we can navigate through playlist:
+#### Check whether we can navigate through playlist:
 
 Navigation through playlist can be done in two ways:
 
@@ -179,7 +179,7 @@ Check for bugs at next song and previous song function definitions.
 
 They use mutagen and pygame modules in main. Make sure we get the synatx correct everywhere and we are doing what we want to do. 
 
-## Chek whether we can pause and stop:
+#### Chek whether we can pause and stop:
 
 If we cannot pause and stop or we get error while trying to pause or stop means tha there are bugs in pause and stop function definitions.
 
@@ -187,7 +187,7 @@ Check for bugs at pause and stop function definitions.
 
 They use pygame and mutagen modules in main. Make sure we get the synatx correct everywhere and we are doing what we want to do.
 
-## Check whether we can scroll through the .mp3 file:
+#### Check whether we can scroll through the .mp3 file:
 
 Here, we can move through the .mp3 file only by scrolling throgh the position slider. 
 
@@ -197,7 +197,7 @@ check for bugs at slide function.
 
 This uses pygame module in main. Make sure we get the syntax correct. 
 
-## Check whether the duration and position of .mp3 file playing are shown:
+#### Check whether the duration and position of .mp3 file playing are shown:
 
 If we cannot see the position of .mp3 file playing and total duration/length of the .mp3 file, There are bugs in playtime function.
 
