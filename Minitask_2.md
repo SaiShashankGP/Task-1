@@ -69,11 +69,11 @@ Creating an MP3 player with GUI tools like Tkinter and plays .mp3 files using py
 We want our MP3 player to 
 
 1. Play .mp3 files
-2. Create playlists
-3. Navigate through playlists
+2. Create playlist
+3. Navigate through playlist
 4. Pause and Stop on command
-5. Scroll through the .mp3 file
-6. Show us the duration of .mp3 file and or current position
+5. Scroll through the playing .mp3 file
+6. Show us the duration of .mp3 file and our current position
 7. Control sound within the app
 
 Why are we using Tkinter? Because it is one of the most common and simple modules which deal with GUI in python.
@@ -82,11 +82,10 @@ Why are we using pygame? Because it has simple functions that deal with .mp3 fil
 
 Why are we not using moviepy? Moviepy module is mainly used for editing and merging. It is not used to play songs. 
 
-Below is the code for the MP3 player by codemy.com 
+We not only use those two modules but also other modules which come in handy like Time and mutagen. 
+
+Below is the code for the MP3 player by codemy.com
 
 https://github.com/flatplanet/Intro-To-TKinter-Youtube-Course/blob/22e726271e3ebc3e7ac1938f4d505b5d5a10588c/player.py
-
-## Prototyping and testing:
-
 
 
