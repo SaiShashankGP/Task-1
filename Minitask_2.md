@@ -48,7 +48,7 @@ We can also add a charging module so that the prototype can be made rechargable.
 
 For example, TP4056 Li-ion charging module with step up converters so that Arduino gets the voltage it needs. 
 
-<img width = "600" height = "600" src = "https://user-images.githubusercontent.com/85270751/121802407-bc67b180-cc59-11eb-90b7-851205f217c1.png">
+<img width = "600" height = "400" src = "https://user-images.githubusercontent.com/85270751/121802407-bc67b180-cc59-11eb-90b7-851205f217c1.png">
 
 We can also add switch between batteries and Arduino so that we can get the temperature reading only when we want.
 
