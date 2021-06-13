@@ -1,4 +1,4 @@
-# Debugging Project 2
+# Debugging Project 2 - Non Contact IR Thermometer
 
 There are many factors to take into consideration before finishing the prototype. We have check whether the prototype is working to its cap or not. 
 
