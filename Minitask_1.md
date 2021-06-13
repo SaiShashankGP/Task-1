@@ -193,7 +193,8 @@ We can even adjust the voltage output because J5019 has such property.
 
 #### Prtotyping and Testing:
 
-https://media.giphy.com/media/LX02T6mIWWLehyKlDy/giphy.gif
+![project2](https://user-images.githubusercontent.com/85270751/121809618-1e84de80-cc7b-11eb-8728-9f85304606a3.gif)
+
 
 #### Reference Project:
 
