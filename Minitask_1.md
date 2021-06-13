@@ -390,11 +390,15 @@ We then have a working seismograph in our home.
 
 <img width = 800 height = 600 src = "https://user-images.githubusercontent.com/85270751/121531594-327ed500-ca1c-11eb-8e1e-ecc80fd2c73e.jpg">
 
+#### Reference project:
+
+https://magpi.raspberrypi.org/articles/build-a-seismograph-with-raspberry-shake
+
 #### Comments:
 
 This is a pretty simple yet very useful project.
 
-We have to get the underlying mechanism to fully understand how this works.
+We have yet to know the underlying mechanism to fully understand how this works.
 
 # Project 8 - Simple Lie Detector
 #### Description:
@@ -414,8 +418,27 @@ Ofcourse this simple project is not the most accurate but it works wth dependabl
 
 #### Ideation:
 
+We take the input to arduino is the voltage at our fingers.
 
+This fluctuates rapidly but whenever someone lies, this changes even more.
 
+Those values differ from subject to subject and is to adjusted every time.
+
+#### Prtotyping:
+
+<img width="600" height = "200" alt="Project 8" src="https://user-images.githubusercontent.com/85270751/121800186-f03cda00-cc4d-11eb-8009-64528172e767.png">
+
+#### Reference project:
+
+https://create.arduino.cc/projecthub/BuildItDR/arduino-lie-detector-a0b914?ref=tag&ref_id=arduino&offset=8
+
+#### Comments:
+
+This is a very vague project and has t be improved further.
+
+More data is needed to proceed further and generalise it to everyone and every condition of the user.
+
+Accuracy is also an important factor and it also needs to be improved.
 
 
 
