@@ -501,7 +501,9 @@ Depending on the data from SCD30 CO2 sensor, LED bar graph gets to display the l
 
 Here is the Github file for the code(code by mosivers from instructables.com) and Photo of circuit design
 
-[https://github.com/vonsivers/LED-Bargraph-CO2-Sensor/blob/08222008966075d18f10085d19e68a61365c593f/code/LEDbargraph_CO2sensor/LEDbargraph_CO2sensor.ino](url="github code")
+https://github.com/vonsivers/LED-Bargraph-CO2-Sensor/blob/08222008966075d18f10085d19e68a61365c593f/code/LEDbargraph_CO2sensor/LEDbargraph_CO2sensor.ino
+
+<img width="426" alt="project 10" src="https://user-images.githubusercontent.com/85270751/121884915-230bce80-cd31-11eb-854f-38594e9b0f4e.png">
 
 
 
