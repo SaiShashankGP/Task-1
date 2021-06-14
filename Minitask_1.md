@@ -509,5 +509,102 @@ https://github.com/vonsivers/LED-Bargraph-CO2-Sensor/blob/08222008966075d18f1008
 
 https://www.instructables.com/Simple-LED-Bar-Graph-CO2-Sensor/
 
+# Project 11 - Dice Rolling Simulator
+#### Description: 
+
+This is a GUI app which mimicks the fair dice rolling. 
+
+#### Ideation:
+
+We use Tkinter(for GUI), PIL(for dice) and random(for fair dice rolling) modules here. 
+
+here is he code,
+
+```
+import tkinter
+from PIL import Image, ImageTk
+import random
+
+# top-level widget which represents the main window of an application
+root = tkinter.Tk()
+root.geometry('400x400')
+root.title('DataFlair Roll the Dice')
+
+# Adding label into the frame
+BlankLine = tkinter.Label(root, text="")
+BlankLine.pack()
+
+# adding label with different font and formatting
+HeadingLabel = tkinter.Label(root, text="Hello from DataFlair!",
+   fg = "light green",
+     bg = "dark green",
+     font = "Helvetica 16 bold italic")
+HeadingLabel.pack()
+
+# images
+dice = ['die1.png', 'die2.png', 'die3.png', 
+    'die4.png', 'die5.png', 'die6.png']
+# simulating the dice with random numbers between
+# 0 to 6 and generating image
+DiceImage = ImageTk.PhotoImage(Image.open(random.choice(dice)))
+
+# construct a label widget for image
+ImageLabel = tkinter.Label(root, image=DiceImage)
+ImageLabel.image = DiceImage
+
+# packing a widget in the parent widget 
+ImageLabel.pack( expand=True)
+
+# call the mainloop of Tk
+# keeps window open
+root.mainloop()
+```
+
+#### Reference project:
+
+https://data-flair.training/blogs/dice-rolling-simulator-python/
+
+
+#### Prototyping and testing:
+
+# Project 12 - YouTube video downloader
+#### Description:
+
+The project name is self expalantory. 
+
+We write a python code which enables us to download YouTube videos.
+
+#### Ideation:
+
+We use pytube(for YouTube download) and sys(for CLI input) modules. 
+
+Here is the code(I have slightly improvised it from the reference project).
+
+```
+import sys
+from pytube import YouTube
+
+link = input("Paste the link here: ")
+
+print("Video downloading")
+
+link = YouTube(link)
+video = link.streams.first()
+video.download()
+
+print("Video downloaded")
+```
+#### Reference project:
+
+https://data-flair.training/blogs/python-youtube-downloader-with-pytube/
+
+#### Prototyping and testing:
+
+
+
+
+
+
+
 
 
