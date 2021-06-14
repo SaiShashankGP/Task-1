@@ -347,8 +347,6 @@ stop_button.grid(row = 0, column = 2, padx = 10)
 ```
 These codeblocks when put together give a simple play-pause-stop mp3 player.
 
-#### Testing:
-
 #### Reference project:
 
 https://www.youtube.com/watch?v=CXMcNbo8PLE&list=RDCMUCFB0dxMudkws1q8w5NJEAmw&start_radio=1&rv=CXMcNbo8PLE&t=0
@@ -480,9 +478,30 @@ This is a cool project but it is a not worth it. Instead I would adjust brightne
 
 But the underlying concept is very interesting. It is worth learning it. 
 
-# Project 10 - 
+# Project 10 - CO2 concentration Indicator
+#### Description:
 
+This project enables us to measure CO2 concentration and indicate us whether its safe or not via LED "dangeometer"
 
+#### Componenets required:
+
+1. SCD30CO2 and RH/T sensor
+2. ESP32 NodeMCU
+3. LED 10 segment bar graph(Blue, Green, Yellow, Red)
+
+#### Ideation:
+
+It is simple in assembly but prograaming the NodeMCU is the tough part.
+
+we take input from SCD30 CO2 sensor and NodeMCU processes it. 
+
+Depending on the data from SCD30 CO2 sensor, LED bar graph gets to display the level of CO2 conc. 
+
+#### Prototyping:
+
+Here is the Github file for the code(code by mosivers from instructables.com) and Photo of circuit design
+
+[https://github.com/vonsivers/LED-Bargraph-CO2-Sensor/blob/08222008966075d18f10085d19e68a61365c593f/code/LEDbargraph_CO2sensor/LEDbargraph_CO2sensor.ino](url)
 
 
 
