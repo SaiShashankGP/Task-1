@@ -505,5 +505,9 @@ https://github.com/vonsivers/LED-Bargraph-CO2-Sensor/blob/08222008966075d18f1008
 
 <img width="426" alt="project 10" src="https://user-images.githubusercontent.com/85270751/121884915-230bce80-cd31-11eb-854f-38594e9b0f4e.png">
 
+#### Reference project:
+
+https://www.instructables.com/Simple-LED-Bar-Graph-CO2-Sensor/
+
 
 
