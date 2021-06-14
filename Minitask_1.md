@@ -441,7 +441,46 @@ More data is needed to proceed further and generalise it to everyone and every c
 
 Accuracy is also an important factor and it also needs to be improved.
 
+# Project 9 - Automatic Brigtness Adjustment in PC
 
+#### Description:
+
+This project enables PC to adjust brightness on its own.
+
+This is a thing that is seen only in smart phones but not in PCs.
+
+#### Components required:
+
+1. Arduino Pro Micro
+2. Photoresistor
+
+#### Ideation:
+
+We collect the data of brightness in the room by the output of Photoresistor. 
+
+The data collected is sent to PC by serial communication of Arduino. 
+
+We have some python libraries which control screen brightness and also work with serial communication. 
+
+Those are pyserial and screen-brightness-control. 
+
+We then write a python program telling the computer to adjust to the brightness level of room using the two libraries mentioned. 
+
+#### prototyping and testing: 
+
+https://www.youtube.com/watch?v=j0BjPwwgyi0
+
+#### Reference project:
+
+https://www.instructables.com/Hack-Computer-to-Make-It-Smart/
+
+#### Comments:
+
+This is a cool project but it is a not worth it. Instead I would adjust brightness manually. 
+
+But the underlying concept is very interesting. It is worth learning it. 
+
+# Project 10 - 
 
 
 
