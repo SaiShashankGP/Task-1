@@ -685,10 +685,10 @@ root.geometry("500x500")
 root.title("Morse Code Generator")
 
 morse_code_label = Label(root, text = "ENTER MORSE CODE").pack()
-morse_inp = Text(root)
-morse_inp_text = morse_inp.get()
 
-char_text = list(morse_inp_text)
+morse_inp_text = Entry(root, width = 50)
+morse_inp_text.pack()
+
 
 def MorseCoder(x):
     if x == 'A' or x == 'a':
@@ -714,9 +714,9 @@ def MorseCoder(x):
     if x == 'K' or x == 'k':
         morseeqv = '-.-'
     if x == 'L' or x == 'l':
-        morseeqv = '.-..'  
+        morseeqv = '.-..'
     if x == 'M' or x == 'm':
-        morseeqv = '--'  
+        morseeqv = '--'
     if x == 'N' or x == 'n':
         morseeqv = '-.'
     if x == 'O' or x == 'o':
@@ -730,9 +730,9 @@ def MorseCoder(x):
     if x == 'S' or x == 's':
         morseeqv = '...'
     if x == 'T' or x == 't':
-        morseeqv( = '-'
+        morseeqv = '-'
     if x == 'U' or x == 'u':
-        morseeqv( = '..-'
+        morseeqv = '..-'
     if x == 'V' or x == 'v':
         morseeqv = '...-'
     if x == 'W' or x == 'w':
@@ -744,7 +744,7 @@ def MorseCoder(x):
     if x == 'Z' or x == 'x':
         morseeqv = '--..'
     if x == ' ':
-        morseeqv = '/'    
+        morseeqv = '/'
     if x == '0':
         morseeqv = '-----'
     if x == '1':
@@ -769,13 +769,15 @@ def MorseCoder(x):
 
 morsecodetext = StringVar()
 def generator():
+    morse_text_entered = morse_inp_text.get()
+    char_text = list(morse_text_entered)
     morse_text = ""
     for char in char_text:
-        morse_text = morse_text + MorseCoder(char)
+        morse_text = morse_text + MorseCoder(char) + ' '
 
     morsecodetext.set(morse_text)
 
-def Copy_password():
+def Copy_code():
     pyperclip.copy(morsecodetext.get())
 
 Button(root, text = 'GENERATE CODE', command = generator).pack(pady = 5)
@@ -788,10 +790,53 @@ root.mainloop()
 ```
 #### Prototyping and testing:
 
+<img width="600" alt="project14" src="https://user-images.githubusercontent.com/85270751/122058799-a00a7700-ce09-11eb-9092-e94d311af389.png">
+
+# Project 15 - Check whether its a palindrome or not
+#### Description:
+
+This app checks whether the given word is a palindrome or not.
+
+#### Ideation:
+
+We use Tkinter(for GUI) module for this app
+
+Here is the code, 
+
+```
+from tkinter import *
+
+root = Tk()
+root.geometry("500x500")
+root.title("Palindrome checker")
+
+pal_label = Label(root, text = "Enter a word").pack()
+pal_text = Entry(root, width = 50)
+pal_text.pack()
+
+def Checker():
+    word = pal_text.get()
+    char_list = list(word)
+    length = len(char_list)
+    for i in range(length):
+        if char_list[i].lower() != char_list[length + i -1].lower():
+            lbl.config(text = "No, it is not a palindrome")
+    else:
+        lbl.config(text = "Yes, it is a palindrome")
+
+Button(root, text = 'CHECK', command = Checker).pack(pady = 5)
+
+lbl = Label(root, text = "")
+lbl.pack()
+
+root.mainloop()
+```
+
+#### Reference project:
+
+https://github.com/kuzmicheff/palindrome/blob/master/palindrome.py
 
 
-
-        
      
 
 
