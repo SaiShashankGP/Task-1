@@ -602,6 +602,57 @@ https://data-flair.training/blogs/python-youtube-downloader-with-pytube/
 
 ![project12](https://user-images.githubusercontent.com/85270751/121932546-9ed23f00-cd62-11eb-85e6-f9f39df123f6.gif)
 
+# Project 13 - Random Passsword Generator
+#### Description:
+
+This application is very helpful in setting a strong password to our requirement. 
+
+#### Ideation:
+
+We use Tkinter(for GUI), random(for password generation), pyperclip(to copy automatically to clipboard) modules. 
+
+Here is the code, 
+
+```
+from tkinter import *
+import pyperclip
+import random
+iport string
+
+root = Tk()
+root.geometry("500x500")
+root.title("Password Generator")
+
+pass_len_label = Label(root, text = 'PASSWORD LENGTH').pack()
+pass_len = IntVar()
+length = SpinBox(root, from_ = 8, to_ = 32, textvariable = pass_len, width = 15).pack()
+
+pass_str = StrVar()
+def Generator():
+    password = ''
+    for x in range(0, 4):
+        password = random.choice(string.ascii_uppercase) + random.choice(string.ascii_lowercase) + random.choice(string.digits) + random.choice(string.punctuations)
+    for y in range(pass_str.get()-4):
+        password = password + random.choice(string.ascii_uppercase) + random.choice(string.ascii_lowercase) + random.choice(string.digits) + random.choice(string.punctuations)
+    pass_str.set(password)
+
+def Copy_password():
+    pyperclip.copy(pass_str.get())
+
+Button(root, text = 'GENERATE PASSWORD', command = Generator).pack(pady = 5)
+
+Entry(root, textvariable = pass_str).pack()
+
+Button(root, text = 'COPY TO CLIPBOARD', command = Copy_password).pack(pady=5)
+```
+
+#### Reference project:
+
+https://data-flair.training/blogs/python-password-generator/
+
+#### Prototyping and testing:
+
+
 
 
 
