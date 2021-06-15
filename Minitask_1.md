@@ -611,13 +611,15 @@ This application is very helpful in setting a strong password to our requirement
 
 We use Tkinter(for GUI), random(for password generation), pyperclip(to copy automatically to clipboard) modules. 
 
+We make sure the program outputs a password with atleast one uppercase letter, one lowercase letter, one digit, one special character. 
+
 Here is the code, 
 
 ```
 from tkinter import *
 import pyperclip
 import random
-iport string
+import string
 
 root = Tk()
 root.geometry("500x500")
@@ -625,18 +627,18 @@ root.title("Password Generator")
 
 pass_len_label = Label(root, text = 'PASSWORD LENGTH').pack()
 pass_len = IntVar()
-length = SpinBox(root, from_ = 8, to_ = 32, textvariable = pass_len, width = 15).pack()
+length = Spinbox(root, from_ = 8, to_ = 32, textvariable = pass_len, width = 15).pack()
 
-pass_str = StrVar()
+pass_str = StringVar()
 def Generator():
     password = ''
-    choices = [random.choice(string.ascii_uppercase), random.choice(string.ascii_lowercase), random.choice(string.digits), random.choice(string.punctuation)]
-    random.shuffle(choices)
     for x in range(0, 4):
+        choices = [random.choice(string.ascii_uppercase), random.choice(string.ascii_lowercase), random.choice(string.digits), random.choice(string.punctuation)]
         password = password + choices[x]
-    for y in range(pass_str.get()-4):
+    for y in range(pass_len.get()-4):
+        choices = [random.choice(string.ascii_uppercase), random.choice(string.ascii_lowercase), random.choice(string.digits), random.choice(string.punctuation)]
+        random.shuffle(choices)
         password = password + random.choice(choices)
-    pass_str.set(password)
 
 def Copy_password():
     pyperclip.copy(pass_str.get())
@@ -646,6 +648,8 @@ Button(root, text = 'GENERATE PASSWORD', command = Generator).pack(pady = 5)
 Entry(root, textvariable = pass_str).pack()
 
 Button(root, text = 'COPY TO CLIPBOARD', command = Copy_password).pack(pady=5)
+
+root.mainloop()
 ```
 
 #### Reference project:
@@ -654,6 +658,8 @@ https://data-flair.training/blogs/python-password-generator/
 
 #### Prototyping and testing:
 
+
+![project13](https://user-images.githubusercontent.com/85270751/122015888-24470500-cdde-11eb-8162-04e8cd02b80a.gif)
 
 
 
