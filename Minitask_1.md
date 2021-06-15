@@ -639,6 +639,7 @@ def Generator():
         choices = [random.choice(string.ascii_uppercase), random.choice(string.ascii_lowercase), random.choice(string.digits), random.choice(string.punctuation)]
         random.shuffle(choices)
         password = password + random.choice(choices)
+    pass_str.set(password)
 
 def Copy_password():
     pyperclip.copy(pass_str.get())
@@ -660,6 +661,139 @@ https://data-flair.training/blogs/python-password-generator/
 
 
 ![project13](https://user-images.githubusercontent.com/85270751/122015888-24470500-cdde-11eb-8162-04e8cd02b80a.gif)
+
+# Project 14 - Morse code generator
+#### Description:
+
+This generates Morse code from strings. 
+
+This is a project by me and not inspired from the Internet.
+
+#### Ideation:
+
+We are going to use Tkinter(for GUI), pyperclip(for copying and pasting) and string modules.
+
+Here is the code,
+
+```
+from tkinter import *
+import pyperclip
+import string
+
+root = Tk()
+root.geometry("500x500")
+root.title("Morse Code Generator")
+
+morse_code_label = Label(root, text = "ENTER MORSE CODE").pack()
+morse_inp = Text(root)
+morse_inp_text = morse_inp.get()
+
+char_text = list(morse_inp_text)
+
+def MorseCoder(x):
+    if x == 'A' or x == 'a':
+        morseeqv = '.-'
+    if x == 'B' or x == 'b':
+        morseeqv = '-...'
+    if x == 'C' or x == 'c':
+        morseeqv = '-.-.'
+    if x == 'D' or x == 'd':
+        morseeqv = '-..'
+    if x == 'E' or x == 'e':
+        morseeqv = '.'
+    if x == 'F' or x == 'f':
+        morseeqv = '..-.'
+    if x == 'G' or x == 'g':
+        morseeqv = '--.'
+    if x == 'H' or x == 'h':
+        morseeqv = '....'
+    if x == 'I' or x == 'i':
+        morseeqv = '..'
+    if x == 'J' or x == 'j':
+        morseeqv = '.---'
+    if x == 'K' or x == 'k':
+        morseeqv = '-.-'
+    if x == 'L' or x == 'l':
+        morseeqv = '.-..'  
+    if x == 'M' or x == 'm':
+        morseeqv = '--'  
+    if x == 'N' or x == 'n':
+        morseeqv = '-.'
+    if x == 'O' or x == 'o':
+        morseeqv = '---'
+    if x == 'P' or x == 'p':
+        morseeqv = '.--.'
+    if x == 'Q' or x == 'q':
+        morseeqv = '--.-'
+    if x == 'R' or x == 'r':
+        morseeqv = '.-.'
+    if x == 'S' or x == 's':
+        morseeqv = '...'
+    if x == 'T' or x == 't':
+        morseeqv( = '-'
+    if x == 'U' or x == 'u':
+        morseeqv( = '..-'
+    if x == 'V' or x == 'v':
+        morseeqv = '...-'
+    if x == 'W' or x == 'w':
+        morseeqv = '.--'
+    if x == 'X' or x == 'x':
+        morseeqv = '-..-'
+    if x == 'Y' or x == 'x':
+        morseeqv = '-.--'
+    if x == 'Z' or x == 'x':
+        morseeqv = '--..'
+    if x == ' ':
+        morseeqv = '/'    
+    if x == '0':
+        morseeqv = '-----'
+    if x == '1':
+        morseeqv = '.----'
+    if x == '2':
+        morseeqv = '..---'
+    if x == '3':
+        morseeqv = '...--'
+    if x == '4':
+        morseeqv = '....-'
+    if x == '5':
+        morseeqv = '.....'
+    if x == '9':
+        morseeqv = '----.'
+    if x == '8':
+        morseeqv = '---..'
+    if x == '7':
+        morseeqv = '--...'
+    if x == '6':
+        morseeqv = '-....'
+    return(morseeqv)
+
+morsecodetext = StringVar()
+def generator():
+    morse_text = ""
+    for char in char_text:
+        morse_text = morse_text + MorseCoder(char)
+
+    morsecodetext.set(morse_text)
+
+def Copy_password():
+    pyperclip.copy(morsecodetext.get())
+
+Button(root, text = 'GENERATE CODE', command = generator).pack(pady = 5)
+
+Entry(root, textvariable = morsecodetext).pack()
+
+Button(root, text = 'COPY TO CLIPBOARD', command = Copy_code).pack(pady = 5)
+
+root.mainloop()
+```
+#### Prototyping and testing:
+
+
+
+
+        
+     
+
 
 
 
