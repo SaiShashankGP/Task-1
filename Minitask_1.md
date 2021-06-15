@@ -630,10 +630,12 @@ length = SpinBox(root, from_ = 8, to_ = 32, textvariable = pass_len, width = 15)
 pass_str = StrVar()
 def Generator():
     password = ''
+    choices = [random.choice(string.ascii_uppercase), random.choice(string.ascii_lowercase), random.choice(string.digits), random.choice(string.punctuation)]
+    random.shuffle(choices)
     for x in range(0, 4):
-        password = random.choice(string.ascii_uppercase) + random.choice(string.ascii_lowercase) + random.choice(string.digits) + random.choice(string.punctuations)
+        password = password + choices[x]
     for y in range(pass_str.get()-4):
-        password = password + random.choice(string.ascii_uppercase) + random.choice(string.ascii_lowercase) + random.choice(string.digits) + random.choice(string.punctuations)
+        password = password + random.choice(choices)
     pass_str.set(password)
 
 def Copy_password():
