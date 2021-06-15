@@ -821,6 +821,7 @@ def Checker():
     for i in range(length):
         if char_list[i].lower() != char_list[length + i -1].lower():
             lbl.config(text = "No, it is not a palindrome")
+            break
     else:
         lbl.config(text = "Yes, it is a palindrome")
 
